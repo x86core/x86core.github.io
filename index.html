@@ -4,7 +4,13 @@ else
   a(href="/about")= __('About')--><li><a href="/archives">归档</a></li><!--liif is_current('links')
   a.current(href="/links")= __('Links')					
 else
-  a(href="/links")= __('Links')		--></div><div class="information"><div class="back_btn"><li><a onclick="window.history.go(-1)" style="display:none;" class="fa fa-chevron-left"> </a></li></div><div class="avatar"><img src="/images/avatar.jpg"></div></div></div><div class="autopagerize_page_element"><div class="content"><div class="post animated fadeInDown"><div class="post-title"><h3><a href="/2017/10/11/Yii2-View/">Yii2 View</a></h3></div><div class="post-content"><p>
+  a(href="/links")= __('Links')		--></div><div class="information"><div class="back_btn"><li><a onclick="window.history.go(-1)" style="display:none;" class="fa fa-chevron-left"> </a></li></div><div class="avatar"><img src="/images/avatar.jpg"></div></div></div><div class="autopagerize_page_element"><div class="content"><div class="post animated fadeInDown"><div class="post-title"><h3><a href="/2017/10/11/yii2-gii-debug/">yii2 gii &amp; debug</a></h3></div><div class="post-content"><p>
+
+开发环境下的gii和debug使用
+
+
+虚拟机 403 问题默认只允许本地访问，需要配置allowedIPs允许访问的IP。
+1234567891011$config['bootstrap'][] = 'debug';$config['modules']['debug'] = [    'class' =&g...</p></div><div class="post-footer"><div class="meta"><div class="info"><i class="fa fa-sun-o"></i><span class="date">2017-10-11</span><i class="fa fa-tag"></i><a href="/tags/Yii2/" title="Yii2" class="tag">Yii2 </a></div></div></div></div><div class="post animated fadeInDown"><div class="post-title"><h3><a href="/2017/10/11/Yii2-View/">Yii2 View</a></h3></div><div class="post-content"><p>
 
 视图参数传递问题。
 
@@ -12,7 +18,7 @@ else
 Layout 视图参数传递action12345678910$data =  array(    'key'=&gt;'value');/** * yii2/base/View.php * @params $params * custom parameters that are sha...</p></div><div class="post-footer"><div class="meta"><div class="info"><i class="fa fa-sun-o"></i><span class="date">2017-10-11</span><i class="fa fa-tag"></i><a href="/tags/Yii2/" title="Yii2" class="tag">Yii2 </a></div></div></div></div><div class="post animated fadeInDown"><div class="post-title"><h3><a href="/2017/09/13/http-form/">http 请求的常用 Content-Type</a></h3></div><div class="post-content"><p>
 application/x-www-form-urlencoded
 
-1234POST http://www.exaple.com HTTP/1.1Content-Type: application/x-www-form-urlencoded;charest=utf-8title=%E6%A0%87%E9%A2...</p></div><div class="post-footer"><div class="meta"><div class="info"><i class="fa fa-sun-o"></i><span class="date">2017-09-13</span><i class="fa fa-tag"></i></div></div></div></div><div class="post animated fadeInDown"><div class="post-title"><h3><a href="/2017/09/13/about-http/">关于http协议的说明</a></h3></div><div class="post-content"><p>导语：
+1234POST http://www.exaple.com HTTP/1.1Content-Type: application/x-www-form-urlencoded;charest=utf-8&gt;[空行]title=%E6%A0%...</p></div><div class="post-footer"><div class="meta"><div class="info"><i class="fa fa-sun-o"></i><span class="date">2017-09-13</span><i class="fa fa-tag"></i></div></div></div></div><div class="post animated fadeInDown"><div class="post-title"><h3><a href="/2017/09/13/about-http/">关于http协议的说明</a></h3></div><div class="post-content"><p>导语：
 了解一下http协议是很有必要的
 
 1. 请求行2. 请求头3. 请求体
